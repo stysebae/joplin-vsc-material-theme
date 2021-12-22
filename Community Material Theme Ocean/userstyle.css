@@ -40,12 +40,8 @@
   --grey: #464B5D;
 }
 
-#rendered-md, body {
+#rendered-md, body, th, td {
   background-color: var(--darker) !important;
-  font-family: var(--font-face) !important;
-}
-
-th, td {
   font-family: var(--font-face) !important;
 }
 
