@@ -163,6 +163,7 @@ i.icon-notes {
   border: 0px !important;
   border-radius: 0;
   text-transform: uppercase;
+  font-size: var(--font-size) !important;
 }
 
 .sidebar > div:last-of-type > button:hover {
@@ -192,7 +193,7 @@ i.icon-notes {
   border: none !important;
 }
 
-/* SEARCH, NEW NOTE AND NEW TASK */
+/* SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
 
 div[height="50"] {
   background-color: var(--darker) !important;
@@ -207,6 +208,7 @@ div[height="50"] input {
 div[height="50"] button {
   background: transparent !important;
   color: var(--accent-color) !important;
+  border: 0 !important;
 }
 
 div[height="50"] button:hover {
@@ -283,13 +285,16 @@ display: none !important;
 }
 
 /* Breadcrumbs (In:...) */
-.bkplMr {
+.cJOYJm {
   background-color: var(--accent-color) !important;
   border-radius: 0 !important;
-  margin: 0px;
+  margin: 0px !important;
+  padding: 5px !important;
+  text-transform: uppercase !important;
+  font-size: var(--font-size) !important;
 }
 
-.bkplMr:hover {
+.cJOYJm:hover {
   opacity: var(--opacity-0-8);
 }
 
@@ -403,7 +408,6 @@ div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
 .cm-hr {
   color: var(--grey) !important;
 }
-
 
 /* Rich Markdown Extra CSS Classes
 Please opt in "Add additional CSS classes for enhanced customization" in plugin
