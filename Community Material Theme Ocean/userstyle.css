@@ -1,4 +1,6 @@
 
+/* Style for rendered Markdown */
+
 :root {
   --darkest: #0C0E16;
   --darker: #0F111A;
@@ -38,11 +40,12 @@
   --grey: #464B5D;
 }
 
-* {
-  background-color: var(--background-darker) !important;
+#rendered-md, body {
+  background-color: var(--darker) !important;
+  font-family: var(--font-face) !important;
 }
 
-body, th, td {
+th, td {
   font-family: var(--font-face) !important;
 }
 
@@ -170,4 +173,41 @@ mark {
 /* Highlighted searched item */
 mark[data-markjs] {
   background-color: var(--yellow) !important;
+}
+
+/*********************************************************************************
+* PLUGINS
+*********************************************************************************/
+
+/* SPOILERS (https://github.com/martinkorelic/joplin-plugin-spoilers) */
+
+/* Container for spoiler blocks */
+.spoiler-block {
+  border: 0 !important;
+  border-radius: 0px;
+}
+
+/* Container for spoiler title */
+#spoiler-block-title {
+  font-family: var(--font-face) !important;
+  color: var(--light) !important;
+  background-color: var(--dark) !important;
+  border-radius: 0px;
+}
+
+/* Container for spoiler body */
+#spoiler-block-body {
+  font-family: var(--font-face) !important;
+  color: var(--light) !important;
+  background-color: var(--dark) !important;
+  border-radius: 0px;
+}
+
+/* Styling of the spoiler block body */
+.summary-content {
+  background-color: var(--dark) !important;
+}
+
+.summary-title:before {
+  color: var(--accent-color) !important;
 }

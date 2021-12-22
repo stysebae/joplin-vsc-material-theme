@@ -54,6 +54,7 @@ html, body {
   background-color: var(--darker) !important;
 }
 
+/* Icons */
 .fa, .far, .fas {
   font-weight: 900 !important;
   font-family: "Font Awesome 5 Free" !important;
@@ -152,7 +153,7 @@ i.icon-notes {
   color: var(--panel-foreground-hover) !important;
 }
 
-/* SYNCHRONIZATION */
+/* SYNCHRONIZATION AREA */
 
 .sidebar > div:last-of-type {
   background-color: none !important;
@@ -193,7 +194,7 @@ i.icon-notes {
   border: none !important;
 }
 
-/* SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
+/* BUTTONS SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
 
 div[height="50"] {
   background-color: var(--darker) !important;
