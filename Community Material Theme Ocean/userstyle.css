@@ -102,12 +102,13 @@ a:hover {
 * CODE BLOCK
 *********************************************************************************/
 
-pre {
+pre, .hljs {
   background-color: var(--darkest) !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
   color: var(--light) !important;
   font-size: 14px !important;
+  overflow: scroll !important;
 }
 
 /* Inline code */
@@ -130,6 +131,7 @@ blockquote {
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
+  border-left: 5px solid var(--darkest) !important;
 }
 
 /*********************************************************************************
@@ -167,5 +169,5 @@ mark {
 
 /* Highlighted searched item */
 mark[data-markjs] {
-  background-color: var(--orange) !important;
+  background-color: var(--yellow) !important;
 }

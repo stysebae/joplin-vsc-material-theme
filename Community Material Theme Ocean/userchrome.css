@@ -179,6 +179,7 @@ i.icon-notes {
 
 .note-list {
   background-color: var(--darker) !important;
+  border: none !important;
 }
 
 /* Empty notelist */
@@ -186,9 +187,9 @@ i.icon-notes {
   background-color: var(--darker) !important;
 }
 
-/* Remove border-right - introduced in 1.3.7 */
+/* Remove border - introduced in 1.3.7 */
 .rli-noteList div {
-  border-right: none !important;
+  border: none !important;
 }
 
 /* SEARCH, NEW NOTE AND NEW TASK */
@@ -304,6 +305,21 @@ display: none !important;
   border-color: var(--dark) !important;
 }
 
+/* NOTE SEARCH BAR */
+
+.note-search-bar, .note-search-bar > div > div {
+  background-color: var(--darkest) !important;
+  width: 100%;
+  border: 0 !important;
+}
+
+.note-search-bar input {
+  border: 0 !important;
+  padding: 5px;
+  color: var(--accent-color) !important;
+  background-color: var(--dark) !important;
+}
+
 /* TAGS */
 
 .tag-bar {
@@ -325,7 +341,8 @@ a[Title="Tags"] + div > span {
 * EDITOR (CODE MIRROR)
 *********************************************************************************/
 
-/* https://discourse.joplinapp.org/t/share-your-css/1730/221 */
+/* A summary of existing classes can be found here: 
+https://discourse.joplinapp.org/t/share-your-css/1730/221 */
 
 .cm-s-material-darker.CodeMirror {
   background-color: var(--darker) !important;
@@ -353,7 +370,7 @@ a[Title="Tags"] + div > span {
 
 /* Links (link) */
 .cm-url {
-  color: var(--red) !important;
+  color: var(--orange) !important;
   opacity: 1;
   text-decoration: underline;
 }
@@ -379,6 +396,7 @@ div.CodeMirror span.cm-comment.cm-jn-inline-code {
 /* Code Block Text */
 div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
   color: var(--white) !important;
+  background-color: transparent !important;
 }
 
 /* Horizontal Line */
@@ -386,10 +404,19 @@ div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
   color: var(--grey) !important;
 }
 
-/*********************************************************************************
-* PLUGINS
-*********************************************************************************/
 
-div > .resizableLayoutItem > .rli-plugin-view-outline-outline.panel {
-  background-color: var(--darker) !important;
+/* Rich Markdown Extra CSS Classes
+Please opt in "Add additional CSS classes for enhanced customization" in plugin
+settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
+
+.cm-header.cm-rm-header-token {
+  color: var(--green) !important;
+}
+
+.cm-strong.cm-rm-strong-token {
+  color: var(--cyan) !important;
+}
+
+pre.cm-rm-blockquote.CodeMirror-line {
+  font-style: italic !important;
 }
