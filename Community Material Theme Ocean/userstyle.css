@@ -207,3 +207,73 @@ mark[data-markjs] {
 .summary-title:before {
   color: var(--accent-color) !important;
 }
+
+/*********************************************************************************
+* PRINTING
+*********************************************************************************/
+
+@media print {
+
+  #rendered-md, body, th, td {
+    background-color: #FFF !important;
+    font-family: var(--font-face) !important;
+  }
+
+  p, ul, ol, li {
+    color: var(--dark) !important;
+  }
+  
+  strong {
+    color: #3a405f !important;
+  }
+
+  h1 {
+    border-bottom: 1px solid #d5d7e0 !important;
+    font-weight: var(--bolder) !important;
+  }
+
+  h2, h3, h4, h5, h6 {
+    border-bottom: 0 !important;
+    font-weight: var(--bolder) !important;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #d5d7e0 !important;
+    margin: 2.5em 0 !important;
+  }
+
+  a {
+    color: #5ba59e !important;
+    text-decoration: underline !important;
+  }
+
+/* Inline code */
+.inline-code {
+  background-color: transparent !important;
+  border: 0 !important;
+  font-family: var(--font-mono) !important;
+  color: #cc9a3e !important;
+  font-size: 14px !important;
+}
+
+pre, .hljs {
+  background-color: #e9eaf1 !important;
+  font-family: var(--font-mono) !important;
+  padding: 10px !important;
+  color: var(--dark) !important;
+  font-size: 14px !important;
+  overflow: scroll !important;
+}
+
+blockquote {
+  background-color: #e9eaf1 !important;
+  padding: 10px !important;
+  color: var(--dark) !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+  border: 0 !important;
+  border-left: 5px solid #c4c6d4 !important;
+}
+
+}

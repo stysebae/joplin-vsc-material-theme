@@ -156,6 +156,7 @@ i.icon-notes {
 /* SYNCHRONIZATION AREA */
 
 .sidebar > div:last-of-type {
+  display: none; /* Hide the synchronization area */
   background-color: none !important;
 }
 
@@ -218,6 +219,10 @@ div[height="50"] button:hover {
 
 div[height="50"] button span {
   color: var(--accent-color) !important;
+}
+
+div[height="50"] .new-todo-button {
+  display: none; /* Hide the button "New todo" */
 }
 
 /* LIST OF NOTES */
@@ -288,10 +293,8 @@ display: none !important;
 /* Breadcrumbs (In:...) */
 .cJOYJm {
   background-color: var(--accent-color) !important;
-  border-radius: 0 !important;
   margin: 0px !important;
   padding: 5px !important;
-  text-transform: uppercase !important;
   font-size: var(--font-size) !important;
 }
 
