@@ -166,7 +166,7 @@ i.icon-notes {
 
 .sidebar > div:last-of-type > button {
   background-color: var(--accent-color) !important;
-  border: 0px !important;
+  border: 5px !important;
   border-radius: 0;
   text-transform: uppercase;
   font-size: var(--font-size) !important;
