@@ -1,572 +1,434 @@
 /* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
 
 :root {
-  --background-darker: #292d3e;
-  --background: #292d3e;
-  --button: #363b56;
-  --button-hover: #4b5169;
-  --input: #333747;
+  --white: #FFF;
+  --black: #000000;
+  --red: #F07178;
+  --orange: #F78C6C;
+  --yellow: #FFCB6B;
+  --darker-yellow: #CC9A3E;
+  --green: #C3E88D;
+  --cyan: #89DDFF;
+  --blue: #82AAFF;
+  --paleblue: #B2CCD6;
+  --purple: #C792EA;
+  --brown: #916b53;
+  --pink: #FF9CAC;
+  --violet: #BB80B3;
+  --grey: #676E95;
+
+  --darkest: #292D3E;
+  --darker: #1D202B;
+  --dark: #292E3F;
+  --light: #A6ACCD;
+  --lighter-grey: #E9EAF1;
+  --light-grey: #C4C6D4;
+  --accent-color: #80CBC4;
+  --accent-color-darker: #5BA59E;
+
+  --panel-foreground: #292D3E;
+  --panel-foreground-active: var(--accent-color);
+  --panel-foreground-hover: var(--white);
+
+  --font-face: "Fira Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "Roboto Mono", Courier, monospace;
+  --font-size: 13px;
+  --icon-size: 16px;
+
+  --regular: 400;
+  --bolder: 600;
+
+  --scroll-radius: 3px;
+
+  --opacity-0-8: 0.8;
 }
 
-/* :root {
-    --color-main-text: #383836;
-    --color-main-background: #f8faf8;
-    --color-main-background-translucent: rgba(255, 255, 255, 1);
-    --color-background-hover: #d4cabe;
-    --color-background-dark: #edf0eb;
-    --color-background-darker: #93c4f5;
-    --color-placeholder-light: #e6e6e6;
-    --color-placeholder-dark: #ccc;
-    --color-primary: #3b4854;
-    --color-primary-light: #f8faf8;
-    --color-primary-text: #f8faf8;
-    --color-primary-text-dark: #edf0eb;
-    --color-primary-element: #3b4854;
-    --color-primary-element-light: #5b6f81;
-    --color-error: #e9322d;
-    --color-warning: #eca700;
-    --color-success: #46ba61;
-    --color-text-maxcontrast: #767676;
-    --color-text-light: #797a79;
-    --color-text-lighter: #767676;
-    --color-loading-light: #ccc;
-    --color-loading-dark: #444;
-    --color-box-shadow: rgba(77, 77, 77, 0.5);
-    --color-border: #cbcbcb;
-    --color-border-dark: #004080;
-    --border-radius: 5px;
-    --border-radius-large: 10px;
-    --border-radius-pill: 100px;
-    --font-face: "SF Pro", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-      Cantarell, Ubuntu, "Helvetica Neue", Arial, "Noto Color Emoji", sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --default-font-size: 14px;
-    --font-size: 14px;
-    --default-line-height: 1.8em;
-    --animation-quick: 100ms;
-    --animation-slow: 300ms;
-    --header-height: 50px;
-    --element-height: 35px;
-  } */
-
-html,
-body {
-  background-color: var(--background-darker);
-  /* font-weight: normal;
-    font-size: var(--default-font-size);
-    line-height: var(--default-line-height);
-    font-family: var(--font-face);
-    color: var(--color-main-text); */
+* {
+  font-family: var(--font-face) !important;
 }
 
-/* div {
-  }
-  
-  a {
-    font-family: var(--font-face) !important;
-  } */
+html, body {
+  background-color: var(--darker) !important;
+  font-size: var(--font-size) !important;
+  font-weight: var(--regular) !important;
+  color: var(--light) !important;
+}
 
-/**************************************************************************************************
-    *  SIDEBAR
-    *************************************************************************************************/
+.rli-root {
+  background-color: var(--darker) !important;
+}
 
-/* .rli-sideBar {
-    min-width: 250px !important;
-    border-right: 1px solid var(--color-border);
-  } */
+/* Icons */
+.fa, .far, .fas {
+  font-weight: 900 !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-size: var(--icon-size) !important;
+}
+
+::placeholder {
+  color: var(--accent-color) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark) !important;
+  border-radius: var(--scroll-radius) !important;
+}
+
+/*********************************************************************************
+* PANELS
+*********************************************************************************/
+
+/* General panel style */
+.resizableLayoutItem > div {
+  min-width: 200px !important;
+  background-color: var(--darker) !important;
+}
+
+/*********************************************************************************
+* SIDEBAR
+*********************************************************************************/
 
 .sidebar {
-  /* padding-top: 5px; */
-  background-color: var(--background-darker) !important;
-  /* color: var(--color-main-text) !important; */
+  background-color: var(--darker) !important;
+  text-transform: uppercase;
+  font-weight: var(--bolder);
 }
 
-.sidebar .folders .list-item,
-.sidebar div,
-.sidebar span {
-  /* color: var(--color-main-text) !important;
-    font-size: var(--font-size) !important;
-    margin-bottom: var(--base-size-1); */
-  opacity: 1;
-}
-
-/* .sidebar div div {
-    font-size: var(--font-size) !important;
-    line-height: 40px !important;
-    min-height: 40px;
-  } */
-
-/* making icons the same width so text aligns */
-/* .sidebar .fas:first-of-type {
-    width: var(--base-size-18);
-    color: var(--color-main-text) !important;
-  } */
-
-/* .list-item div {
-    margin-left: auto !important;
-    padding-right: var(--base-size-13) !important;
-  } */
-
-/* .sidebar span:hover {
-    background-color: red !important;
-  } */
-
-/* .side-bar div {
-    font-size: 12px !important;
-  } */
-
-/* a.list-item {
-    font-size: 12px !important;
-  } */
-
-.folders .list-item-container {
-  /* font-size: var(--font-size) !important;
-    line-height: var(--element-height) !important;
-    min-height: var(--element-height); */
-  background-color: transparent;
-}
-
-/* .sidebar [class^="icon-"],
-  .sidebar [class*=" icon-"] {
-    color: var(--color-main-text) !important;
-  } */
-
-/* .sidebar .xOaMI,
-  .sidebar .eRzPp {
-    background-color: #99ccff !important;
-  } */
-
-.note-list .list-item-container a:focus {
-  background-color: var(--button) !important;
-}
-
-.sidebar .list-item-container:hover,
-.note-list .list-item-container:hover,
-.folders .list-item-container:hover {
-  background-color: var(--button-hover) !important;
-}
-
-.folders .list-item-container a:hover,
-.tags .list-item-container a:hover {
-  background-color: transparent !important;
-}
-
-/* folders */
-/* .folders > div:first-of-type > a {
-    text-transform: uppercase !important;
-    color: var(--color-main-text);
-  } */
-
-/* .sidebar,
-  .sidebar div,
-  .sidebar div a {
-    color: var(--color-main-text) !important;
-  } */
-
-/* .sidebar div {
-    line-height: 40px !important;
-    min-height: 40px;
-  } */
-
-/* a.list-item:hover {
-    background-color: var(--teal) !important;
-  } */
-
-/*Number on the right */
-/* .sidebar .folders .list-item div {
-    margin-right: 12px;
-    color: var(--color-main-text) !important;
-    opacity: 0.8 !important;
-  } */
-
-/**************************************************************************************************
-    *  Tags 
-    *************************************************************************************************/
-
-/* global tag style */
-/* .tags .list-item-container {
-    padding-left: 12px !important;
-    height: auto !important;
-  } */
-
-.tags .list-item-container .list-item {
-  background-color: transparent !important;
-  /* padding: 0px !important;
-    font-size: var(--font-size) !important;
-    margin-right: 12px !important;
-    color: var(--color-main-text) !important;
-    opacity: 1 !important;
-    line-height: var(--element-height) !important;
-    width: 100% !important; */
-}
-
-.tags .list-item-container i {
+/* Hide "All notes" icon */
+i.icon-notes {
   display: none !important;
 }
 
-.tag-list > span {
-  /* color: var(--color-main-text) !important; */
-  /* border-radius: var(--border-radius) !important; */
-  /* border: 1px solid var(--color-border-dark) !important; */
-  background-color: var(--background-darker) !important;
-  /* line-height: 2 !important; */
-  /* padding: 0px 10px !important; */
+/* FOLDERS */
+
+/* "Add new notebook" button */
+.sidebar > div > div > button span {
+  color: var(--accent-color) !important;
 }
 
-/**************************************************************************************************
-    *  Sync Button
-    *************************************************************************************************/
+.sidebar > div > div > button:hover {
+  opacity: var(--opacity-0-8);
+}
 
-/* synchronize area */
+.folders .list-item-container, 
+.folders .list-item-container:hover {
+  background-color: transparent;
+}
+
+.folders .list-item-container a {
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.folders .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+  background-color: var(--darkest) !important;
+}
+
+.folders .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* TAGS */
+
+.tags .list-item-container, 
+.tags .list-item-container:hover {
+  display: inline-block;
+  line-height: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  background-color: transparent;
+}
+
+.tags .list-item-container a {
+  padding-left: 12px !important;
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.tags .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+}
+
+.tags .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* SYNCHRONIZATION AREA */
+
 .sidebar > div:last-of-type {
-  background-color: transparent !important;
-  /* text-align: center !important; */
+  display: none; /* Hide the synchronization area */
+  background-color: none !important;
 }
 
-/* synchronize button */
 .sidebar > div:last-of-type > button {
-  background-color: var(--button) !important;
+  background-color: var(--accent-color) !important;
   border: 0px !important;
   border-radius: 0;
-  /* color: var(--color-main-text); */
+  text-transform: uppercase;
+  font-size: var(--font-size) !important;
 }
 
 .sidebar > div:last-of-type > button:hover {
-  background-color: var(--button-hover) !important;
+  opacity: var(--opacity-0-8);
 }
 
-/* .sidebar > div:last-of-type > button span {
-    color: var(--overlay-light5) !important;
-    text-transform: uppercase !important;
-  } */
+.sidebar > div:last-of-type > button > span {
+  color: var(--dark) !important;
+}
 
-/**************************************************************************************************
-    *  Note List
-    *************************************************************************************************/
-
-/* .note-list > div > a:hover {
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-  } */
+/*********************************************************************************
+* NOTE LIST
+*********************************************************************************/
 
 .note-list {
-  background-color: var(--background-darker) !important;
-  /* width: 100% !important;
-    padding-top: 10px;
-    opacity: 1; */
-}
-
-.note-list .list-item-container {
-  /* padding: 10px;
-    border-radius: 0px !important;
-    box-shadow: none !important;
-    border: none !important;
-    z-index: 1;
-    padding: 0px;
-    height: var(--element-height);
-    position: relative; */
-  background-color: transparent;
-  /* font-size: var(--default-font-size) !important;
-    color: var(--color-main-text) !important;
-    box-shadow: 0 0 2px var(--color-box-shadow); */
-  text-shadow: unset;
-}
-
-/* .item-list.note-list .list-item-container:nth-child(2) {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-    overflow: hidden;
-  } */
-
-/* .item-list.note-list .list-item-container:nth-last-child(2) {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    overflow: hidden;
-  } */
-
-.item-list.note-list .list-item-container:before {
+  background-color: var(--darker) !important;
   border: none !important;
 }
 
-.note-list .list-item-container * {
-  background: transparent !important;
-  /* font-size: var(--font-size) !important; */
+/* Empty notelist */
+.cLdGCO, .cLdGCO > div {
+  background-color: var(--darker) !important;
 }
 
-.note-list .list-item-container span {
-  margin-left: 1.2em !important;
+/* Remove border - introduced in 1.3.7 */
+.rli-noteList div {
+  border: none !important;
 }
 
-.note-list .list-item-container div {
-  background-color: transparent !important;
-}
+/* BUTTONS SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
 
-/* .note-list input[type="checkbox"] {
-    opacity: 1 !important;
-    padding: 7px 6px;
-    font-size: var(--font-size) !important;
-    background-color: var(--background);
-    color: white;
-    border: 2px solid transparent;
-    outline: none;
-    border-radius: var(--border-radius);
-    margin: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline: none;
-    width: 0;
-    height: 0;
-    box-shadow: none;
-    font-size: 2em;
-    opacity: 0.1;
-    outline: 0px solid transparent;
-    width: 20px !important;
-    height: 20px !important;
-    margin-right: 0 !important;
-  } */
-
-/* .note-list input[type="checkbox"i]:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    width: 14px;
-    height: 14px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: var(--border-radius);
-    border-color: var(--color-border-dark);
-    position: absolute;
-    top: 11px;
-    left: 11px;
-    top: calc(var(--element-height) / 2 - 14px + 4px);
-    left: calc(var(--element-height) / 2 - 14px + 4px);
-  } */
-
-/* .note-list input[type="checkbox"]:checked:before {
-    content: "✓";
-    text-align: center;
-    border-color: var(--color-primary-light);
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 14px;
-    color: var(--color-main-text);
-  } */
-
-/**************************************************************************************************
-    *  Search
-    *************************************************************************************************/
-
-/* .rli-noteList {
-    background-color: var(--color-background-dark);
-    min-width: 250px !important;
-    border-right: 1px solid var(--color-border);
-  } */
-
-/* .rli-noteList .gkjdjq {
-    border: 0 !important;
-    background-color: transparent !important;
-  }
-  
-  .rli-noteList .gkjdjq > div {
-    background-color: transparent !important;
-  }
-  
-  .rli-noteList .eUfLED {
-    width: 100%;
-  } */
-
-/* global search */
 div[height="50"] {
-  background: var(--background-darker) !important;
-  /* padding: 10px; */
+  background-color: var(--darker) !important;
 }
 
 div[height="50"] input {
-  border: medium none !important;
-  /* box-sizing: border-box;
-    color: var(--color-main-text);
-    cursor: text;
-    font-size: 100%;
-    margin: 0;
-    padding: 0 15px;
-    width: 100%;
-    min-height: var(--element-height);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    outline: none;
-    border-radius: var(--border-radius); */
-  background-color: var(--input);
-  /* box-shadow: 0 0 2px var(--color-box-shadow); */
-  text-shadow: unset;
+  border: none !important;
+  color: var(--accent-color) !important;
+  background-color: var(--darkest) !important;
 }
 
-/* icon search */
-/* .rli-noteList > div span[class$="icon-search"] {
-    color: var(--icons) !important;
-    min-height: var(--element-height);
-    margin: 0 !important;
-    margin-right: 5px !important;
-    opacity: 0.5;
-    height: var(--element-height);
-    display: none;
-  } */
 div[height="50"] button {
   background: transparent !important;
-  color: var(--color-main-text) !important;
-  /* padding: 20px 0;
-    opacity: 0.8;
-    border-radius: 50px;
-    height: 20px;
-    width: 20px;
-    padding: 0;
-    margin-top: 7px; */
+  color: var(--accent-color) !important;
+  border: 0 !important;
 }
+
 div[height="50"] button:hover {
-  opacity: 0.8;
-  /* background-color: rgba(0, 0, 0, 0.1) !important; */
+  opacity: var(--opacity-0-8);
 }
 
 div[height="50"] button span {
-  color: var(--color-main-text) !important;
-  font-weight: bold !important;
+  color: var(--accent-color) !important;
 }
 
-/**************************************************************************************************
-    *  PANELS
-    *************************************************************************************************/
-
-/* general panel styles */
-/* .rli-root > .resizableLayoutItem > div {
-    min-width: 150px !important;
-    width: 100% !important;
-  } */
-
-/* .rli-root > .resizableLayoutItem > .resizableLayoutItem > div {
-    height: 100% !important;
-    width: 100% !important;
-  } */
-
-/* remove border from plugin iframes */
-/* div.resizableLayoutItem iframe {
-    border-bottom: none !important;
-  } */
-
-/* highlight splitters (vertical and horizontal) while dragging */
-/* .resizableLayoutItem > span > div {
-    z-index: 100 !important;
-    transition: 0.5s;
-  } */
-
-/* .resizableLayoutItem > span > div:hover,
-  .resizableLayoutItem > span > div:active {
-    background: var(--primary);
-    opacity: var(--opacity-0-5);
-  } */
-
-/* scrollbars */
-/* ::-webkit-scrollbar-thumb {
-    display: none;
-    scrollbar-width: thin;
-    border-radius: 0;
-    background-color: var(--color-border-dark) !important;
-    scrollbar-color: var(--color-border-dark) transparent;
-  } */
-
-/* ::-webkit-scrollbar-track,
-  ::-webkit-scrollbar-track-piece {
-    display: none;
-    background-color: transparent !important;
-  } */
-
-/**************************************************************************************************
-    *  ADDITIONAL
-    *************************************************************************************************/
-
-/* .bNOfCT {
-    display: none !important;
-  } */
-
-/* .CodeMirror * {
-    font-size: 16px !important;
-    font-family: "SF Mono", monospace !important;
-  } */
-
-/* .editor-toolbar *,
-  .editor-toolbar span,
-  .codeMirrorEditor,
-  .kYItFT * {
-    color: var(--color-main-text) !important;
-  } */
-
-/* .editor-toolbar .button {
-      background-color: var(--grey) !important;
-      height: var(--base-size-40);
-  } */
-
-.editor-toolbar .button:not(.disabled):hover,
-.header .button:not(.disabled):hover {
-  background-color: var(--button-hover) !important;
-  /* color: var(--dark-white) !important;
-    border: 1px solid var(--red) !important; */
+div[height="50"] .new-todo-button {
+  display: none; /* Hide the button "New todo" */
 }
 
-.rli-editor {
-  backdrop-filter: blur(10px);
+/* LIST OF NOTES */
+
+.note-list .list-item-container {
+  background-color: var(--darker) !important;
 }
 
-.rli-editor .gCTJhE > div {
+.note-list .list-item-container:hover {
+  background-color: var(--dark) !important;
+}
+
+.item-list.note-list .list-item-container::before {
+  border: none !important;
+}
+
+.note-list .list-item-container a {
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.note-list .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+  background-color: var(--dark) !important;
+}
+
+.note-list .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* Add "..." to notes with long titles */
+.item-list.note-list .list-item-container > a > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*********************************************************************************
+* EDITOR
+*********************************************************************************/
+
+/* EDITOR TOOLBAR */
+
+/* Title */
+.rli-editor .kYItFT, .kYItFT > input {
+  padding-top: 5px;
+  background-color: var(--darker) !important;
+}
+
+.editor-toolbar {
   background-color: transparent !important;
 }
 
+.editor-toolbar > div > a:hover {
+  opacity: var(--opacity-0-8);
+}
+
+/* Hide "Spell checker" button */
+.editor-toolbar a[title="Spell checker"] {
+display: none !important;
+}
+
+/* Hide "Markdown/Richtext editor" Button */
 .tox-tbtn {
+display: none !important;
+}
+
+/* Breadcrumbs (In:...) */
+.cJOYJm {
+  background-color: var(--accent-color) !important;
+  margin: 0px !important;
+  padding: 5px !important;
+  font-size: var(--font-size) !important;
+}
+
+.cJOYJm:hover {
+  opacity: var(--opacity-0-8);
+}
+
+/* CONTENT */
+
+/* Empty notebook */
+.rli-editor > div > div:empty {
+  background-color: var(--darker) !important;
+}
+
+/* Editor layout splitter */
+.rli-editor > div > div > div > div > div > div > div:last-of-type {
+  border-color: var(--dark) !important;
+}
+
+/* NOTE SEARCH BAR */
+
+.note-search-bar, .note-search-bar > div > div {
+  background-color: var(--darkest) !important;
+  width: 100%;
+  border: 0 !important;
+}
+
+.note-search-bar input {
+  border: 0 !important;
+  padding: 5px;
+  color: var(--accent-color) !important;
+  background-color: var(--dark) !important;
+}
+
+/* TAGS */
+
+.tag-bar {
+  background-color: transparent !important;
+}
+
+.tag-list > span {
+  color: var(--accent-color) !important;
+  background-color: var(--darkest) !important;
+  border-radius: var(--button-radius) !important;
+}
+
+/* Hide "Click to add tags..."*/
+a[Title="Tags"] + div > span {
   display: none !important;
 }
 
-/* .rli-editor .kYItFT {
-    padding: 10px 35px;
-  } */
+/*********************************************************************************
+* EDITOR (CODE MIRROR)
+*********************************************************************************/
 
-/* .rli-editor .kYItFT input {
-    font-size: 1.8em !important;
-  } */
+/* A summary of existing classes can be found here: 
+https://discourse.joplinapp.org/t/share-your-css/1730/221 */
 
-.codeMirrorEditor {
-  color: var(--color-text-light) !important;
+.cm-s-material-darker.CodeMirror {
+  background-color: var(--darker) !important;
+  color: var(--light) !important
 }
 
-/* .codeMirrorEditor .CodeMirror-wrap {
-    padding: 15px 35px;
-  } */
-
-.rli-root,
-.editor-toolbar,
-.kYItFT > input {
-  background-color: var(--background) !important;
+/* Header */
+.cm-header {
+  color: var(--yellow) !important;
 }
 
-.codeMirrorEditor {
+/* Italics/Emphasis, Bold, BoldItalics */
+.cm-em, .cm-strong, .cm-strong.cm-em {
+  color: var(--red) !important;
+}
+
+/* Lists (Bullet/number/todo) */
+.cm-variable-2, .cm-variable-3, .cm-keyword {
+  color: var(--light) !important;
+}
+
+.cm-s-material-darker .cm-variable-2.cm-rm-list-token {
+	color: var(--cyan) !important;
+}
+
+/* Links (link) */
+.cm-url {
+  color: var(--orange) !important;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Links (text) */
+.cm-link-text {
+  color: var(--blue) !important;
+}
+
+/* Comment outside code block */
+pre.CodeMirror-line span.cm-comment {
+	color: var(--white) !important;
+  background-color: none !important;
+  border: 0 !important;
+}
+
+div.CodeMirror span.cm-comment.cm-jn-inline-code {
+	background-color: transparent !important;
+	padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Code Block Text */
+div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
+  color: var(--white) !important;
   background-color: transparent !important;
 }
 
-/* .cm-s-default .cm-header {
-    color: #004080;
-  }
-  
-  .cm-s-default .cm-def {
-    color: #004080;
-  }
-  
-  .cm-s-default .cm-variable-2 {
-    color: var(--color-text-light) !important;
-  }
-  
-  mark {
-    color: var(--color-main-text) !important;
-  }
-  
-  .cm-search-marker-selected {
-    background-color: var(--color-box-shadow) !important;
-  } */
+/* Horizontal Line */
+.cm-hr {
+  color: var(--grey) !important;
+}
+
+/* Rich Markdown Extra CSS Classes
+Please opt in "Add additional CSS classes for enhanced customization" in plugin
+settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
+
+.cm-header.cm-rm-header-token {
+  color: var(--green) !important;
+}
+
+.cm-strong.cm-rm-strong-token {
+  color: var(--cyan) !important;
+}
+
+pre.cm-rm-blockquote.CodeMirror-line {
+  font-style: italic !important;
+}

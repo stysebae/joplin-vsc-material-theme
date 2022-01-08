@@ -1,15 +1,34 @@
 /* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
 
 :root {
+  --white: #FFF;
+  --black: #000000;
+  --red: #F07178;
+  --orange: #F78C6C;
+  --yellow: #FFCB6B;
+  --darker-yellow: #CC9A3E;
+  --green: #C3E88D;
+  --cyan: #89DDFF;
+  --blue: #82AAFF;
+  --paleblue: #B2CCD6;
+  --purple: #C792EA;
+  --brown: #916b53;
+  --pink: #FF9CAC;
+  --violet: #BB80B3;
+  --grey: #464B5D;
+
   --darkest: #0C0E16;
   --darker: #0F111A;
   --dark: #191C2B;
   --light: #A6ACCD;
+  --lighter-grey: #E9EAF1;
+  --light-grey: #C4C6D4;
   --accent-color: #80CBC4;
+  --accent-color-darker: #5BA59E;
 
   --panel-foreground: #525975;
   --panel-foreground-active: var(--accent-color);
-  --panel-foreground-hover: #FFF;
+  --panel-foreground-hover: var(--white);
 
   --font-face: "Fira Sans", Arial, Helvetica, sans-serif;
   --font-mono: "Roboto Mono", Courier, monospace;
@@ -22,21 +41,6 @@
   --scroll-radius: 3px;
 
   --opacity-0-8: 0.8;
-
-  --white: #ffffff;
-  --black: #000000;
-  --red: #f07178;
-  --orange: #F78C6C;
-  --yellow: #FFCB6B;
-  --green: #C3E88D;
-  --cyan: #89DDFF;
-  --blue: #82AAFF;
-  --paleblue: #B2CCD6;
-  --purple: #C792EA;
-  --brown: #916b53;
-  --pink: #ff9cac;
-  --violet: #bb80b3;
-  --grey: #464B5D;
 }
 
 * {

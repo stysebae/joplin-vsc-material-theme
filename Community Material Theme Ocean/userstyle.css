@@ -2,15 +2,34 @@
 /* Style for rendered Markdown */
 
 :root {
+  --white: #FFF;
+  --black: #000000;
+  --red: #F07178;
+  --orange: #F78C6C;
+  --yellow: #FFCB6B;
+  --darker-yellow: #CC9A3E;
+  --green: #C3E88D;
+  --cyan: #89DDFF;
+  --blue: #82AAFF;
+  --paleblue: #B2CCD6;
+  --purple: #C792EA;
+  --brown: #916b53;
+  --pink: #FF9CAC;
+  --violet: #BB80B3;
+  --grey: #464B5D;
+
   --darkest: #0C0E16;
   --darker: #0F111A;
   --dark: #191C2B;
   --light: #A6ACCD;
+  --lighter-grey: #E9EAF1;
+  --light-grey: #C4C6D4;
   --accent-color: #80CBC4;
+  --accent-color-darker: #5BA59E;
 
   --panel-foreground: #525975;
   --panel-foreground-active: var(--accent-color);
-  --panel-foreground-hover: #FFF;
+  --panel-foreground-hover: var(--white);
 
   --font-face: "Fira Sans", Arial, Helvetica, sans-serif;
   --font-mono: "Roboto Mono", Courier, monospace;
@@ -23,21 +42,6 @@
   --scroll-radius: 3px;
 
   --opacity-0-8: 0.8;
-
-  --white: #ffffff;
-  --black: #000000;
-  --red: #f07178;
-  --orange: #F78C6C;
-  --yellow: #FFCB6B;
-  --green: #C3E88D;
-  --cyan: #89DDFF;
-  --blue: #82AAFF;
-  --paleblue: #B2CCD6;
-  --purple: #C792EA;
-  --brown: #916b53;
-  --pink: #ff9cac;
-  --violet: #bb80b3;
-  --grey: #464B5D;
 }
 
 #rendered-md, body, th, td {
@@ -209,13 +213,13 @@ mark[data-markjs] {
 }
 
 /*********************************************************************************
-* PRINTING
+* PRINT VERSION
 *********************************************************************************/
 
 @media print {
 
   #rendered-md, body, th, td {
-    background-color: #FFF !important;
+    background-color: var(--white) !important;
     font-family: var(--font-face) !important;
   }
 
@@ -224,11 +228,11 @@ mark[data-markjs] {
   }
   
   strong {
-    color: #3a405f !important;
+    color: var(--blue) !important;
   }
 
   h1 {
-    border-bottom: 1px solid #d5d7e0 !important;
+    border-bottom: 1px solid var(--lighter-grey) !important;
     font-weight: var(--bolder) !important;
   }
 
@@ -239,12 +243,12 @@ mark[data-markjs] {
 
   hr {
     border: none;
-    border-bottom: 1px solid #d5d7e0 !important;
+    border-bottom: 1px solid var(--lighter-grey) !important;
     margin: 2.5em 0 !important;
   }
 
   a {
-    color: #5ba59e !important;
+    color: var(--accent-color-darker) !important;
     text-decoration: underline !important;
   }
 
@@ -253,12 +257,12 @@ mark[data-markjs] {
   background-color: transparent !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  color: #cc9a3e !important;
+  color: var(--darker-yellow) !important;
   font-size: 14px !important;
 }
 
 pre, .hljs {
-  background-color: #e9eaf1 !important;
+  background-color: var(--lighter-grey) !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
   color: var(--dark) !important;
@@ -267,13 +271,13 @@ pre, .hljs {
 }
 
 blockquote {
-  background-color: #e9eaf1 !important;
+  background-color: var(--lighter-grey) !important;
   padding: 10px !important;
   color: var(--dark) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid #c4c6d4 !important;
+  border-left: 5px solid var(--light-grey) !important;
 }
 
 }
