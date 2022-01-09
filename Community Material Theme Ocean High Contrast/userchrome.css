@@ -164,14 +164,12 @@ i.icon-notes {
 /* SYNCHRONIZATION AREA */
 
 .sidebar > div:last-of-type {
-  display: none; /* Hide the synchronization area */
   background-color: none !important;
 }
 
 .sidebar > div:last-of-type > button {
   background-color: var(--accent-color) !important;
-  border: 5px !important;
-  border-radius: 0;
+  border: 0px !important;
   text-transform: uppercase;
   font-size: var(--font-size) !important;
 }
@@ -227,10 +225,6 @@ div[height="50"] button:hover {
 
 div[height="50"] button span {
   color: var(--accent-color) !important;
-}
-
-div[height="50"] .new-todo-button {
-  display: none; /* Hide the button "New todo" */
 }
 
 /* LIST OF NOTES */
@@ -346,7 +340,6 @@ display: none !important;
 .tag-list > span {
   color: var(--accent-color) !important;
   background-color: var(--darkest) !important;
-  border-radius: var(--button-radius) !important;
 }
 
 /* Hide "Click to add tags..."*/
