@@ -1,6 +1,6 @@
 # VSCode [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Joplin
 
-![screenshots](/screenshots.gif)
+![screenshots](/screenshots/screenshots.gif)
 
 These themes are **flat material themes** for newer version (>= 2.x) of Joplin  desktop application. They are **heavily inspired by the color schemes [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Visual Studio Code**. It's not 100% identical and there are rooms for improvement. Mostly background colors are changed. You can see [Screenshots](#screenshots) section to make your choice among the different themes.
 
@@ -64,16 +64,32 @@ div[height="50"] .new-todo-button {
 
 ### Community Material Theme
 
+![Default](/screenshots/default.png)
+
 ### Community Material Theme High Contrast
+
+![Default High Contrast](/screenshots/default_hc.png)
 
 ### Community Material Theme Darker
 
+![Darker](/screenshots/darker.png)
+
 ### Community Material Theme Darker High Contrast
+
+![Darker High Contrast](/screenshots/darker_hc.png)
 
 ### Community Material Theme Ocean
 
+![Ocean](/screenshots/ocean.png)
+
 ### Community Material Theme Ocean High Contrast
+
+![Ocean High Contrast](/screenshots/ocean_hc.png)
 
 ### Community Material Theme Palenight
 
+![Palenight](/screenshots/palenight.png)
+
 ### Community Material Theme Palenight High Contrast
+
+![Palenight](/screenshots/palenight_hc.png)
