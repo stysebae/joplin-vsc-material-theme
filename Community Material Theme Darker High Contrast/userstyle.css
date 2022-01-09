@@ -21,12 +21,12 @@
   --darker: #212121;
   --dark: #303030;
   --light: #EEFFFF;
-  --lighter-grey: #DDDEE7;
+  --lighter-grey: #E9EAF1;
   --light-grey: #C4C6D4;
   --accent-color: #80CBC4;
   --accent-color-darker: #5BA59E;
 
-  --panel-foreground: #212121;
+  --panel-foreground: #616161;
   --panel-foreground-active: var(--accent-color);
   --panel-foreground-hover: var(--white);
 

@@ -26,7 +26,7 @@
   --accent-color: #80CBC4;
   --accent-color-darker: #5BA59E;
 
-  --panel-foreground: #212121;
+  --panel-foreground: #616161;
   --panel-foreground-active: var(--accent-color);
   --panel-foreground-hover: var(--white);
 

@@ -17,8 +17,8 @@
   --violet: #BB80B3;
   --grey: #676E95;
 
-  --darkest: #292D3E;
-  --darker: #1D202B;
+  --darkest: #1D202B;
+  --darker: #292D3E;
   --dark: #292E3F;
   --light: #A6ACCD;
   --lighter-grey: #E9EAF1;
@@ -26,7 +26,7 @@
   --accent-color: #80CBC4;
   --accent-color-darker: #5BA59E;
 
-  --panel-foreground: #292D3E;
+  --panel-foreground: #676E95;
   --panel-foreground-active: var(--accent-color);
   --panel-foreground-hover: var(--white);
 

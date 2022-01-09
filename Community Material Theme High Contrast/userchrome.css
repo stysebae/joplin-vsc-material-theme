@@ -18,6 +18,7 @@
   --grey: #546E7A;
 
   --darkest: #1C262B;
+  --darkest-alt: #12191d;
   --darker: #263238;
   --dark: #33434B;
   --light: #EEFFFF;
@@ -48,7 +49,7 @@
 }
 
 html, body {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
   font-size: var(--font-size) !important;
   font-weight: var(--regular) !important;
   color: var(--light) !important;
@@ -85,12 +86,16 @@ html, body {
   background-color: var(--darker) !important;
 }
 
+.resizableLayoutItem .rli-sideBar {
+  background-color: var(--darkest) !important;
+}
+
 /*********************************************************************************
 * SIDEBAR
 *********************************************************************************/
 
 .sidebar {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
   text-transform: uppercase;
   font-weight: var(--bolder);
 }
@@ -183,13 +188,13 @@ i.icon-notes {
 *********************************************************************************/
 
 .note-list {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
   border: none !important;
 }
 
 /* Empty notelist */
 .cLdGCO, .cLdGCO > div {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
 }
 
 /* Remove border - introduced in 1.3.7 */
@@ -200,13 +205,13 @@ i.icon-notes {
 /* BUTTONS SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
 
 div[height="50"] {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
 }
 
 div[height="50"] input {
   border: none !important;
   color: var(--accent-color) !important;
-  background-color: var(--darkest) !important;
+  background-color: var(--darkest-alt) !important;
 }
 
 div[height="50"] button {
@@ -226,11 +231,11 @@ div[height="50"] button span {
 /* LIST OF NOTES */
 
 .note-list .list-item-container {
-  background-color: var(--darker) !important;
+  background-color: var(--darkest) !important;
 }
 
 .note-list .list-item-container:hover {
-  background-color: var(--dark) !important;
+  background-color: var(--darker) !important;
 }
 
 .item-list.note-list .list-item-container::before {
@@ -245,7 +250,7 @@ div[height="50"] button span {
 
 .note-list .list-item-container a:focus {
   color: var(--panel-foreground-active) !important;
-  background-color: var(--dark) !important;
+  background-color: var(--darkest-alt) !important;
 }
 
 .note-list .list-item-container a:hover {
