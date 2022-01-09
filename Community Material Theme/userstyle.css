@@ -22,7 +22,7 @@
   --darker: #263238;
   --dark: #33434B;
   --light: #EEFFFF;
-  --lighter-grey: #E9EAF1;
+  --lighter-grey: #DDDEE7;
   --light-grey: #C4C6D4;
   --accent-color: #80CBC4;
   --accent-color-darker: #5BA59E;
@@ -232,7 +232,7 @@ mark[data-markjs] {
   }
 
   h1 {
-    border-bottom: 1px solid var(--lighter-grey) !important;
+    border-bottom: 1px solid var(--light-grey) !important;
     font-weight: var(--bolder) !important;
   }
 
@@ -243,7 +243,7 @@ mark[data-markjs] {
 
   hr {
     border: none;
-    border-bottom: 1px solid var(--lighter-grey) !important;
+    border-bottom: 1px solid var(--light-grey) !important;
     margin: 2.5em 0 !important;
   }
 
