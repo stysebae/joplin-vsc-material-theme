@@ -3,15 +3,15 @@
 ![screenshots](/screenshots/screenshots.gif)
 *See [Screenshots](#screenshots) section*
 
-These themes are **flat material themes** for newer version (>= 2.x) of Joplin  desktop application. They are **heavily inspired by the color schemes [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Visual Studio Code**. It's not 100% identical and there are rooms for improvement. Mostly background colors are changed. You can see [Screenshots](#screenshots) section to make your choice among the different themes.
+These themes are **flat material themes** for newer version (>= 2.x) of Joplin  desktop application. They are **heavily inspired by the color schemes [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Visual Studio Code**. 
 
-These themes are modified versions of [Joplin Light Theme](https://github.com/LongBay/Joplin-Light-Theme) by [LongBay](https://github.com/LongBay), which is itself originally inspired by [Joplin Clear UI theme](https://github.com/marcteys/joplin-theme-clearUI) by [Marc Teyssier](https://github.com/marcteys). Some tweaks are also coming from the topic [Share your CSS](https://discourse.joplinapp.org/t/share-your-css/1730) on Joplin's forum.
-
+These themes are modified versions of [joplin-vsc-material-theme](https://github.com/mahor1221/joplin-vsc-material-theme) by [mahor1221](https://github.com/mahor1221). These themes are not longer maintained and not suited for newer versions of Joplin. Here are their updated versions for Joplin >= 2.x.
+ 
 ## Installation
 
 Launch Joplin desktop application: 
 - Make sure that **Joplin is using the dark mode** in `Tools > Options > Appearance`
-- Go to `Tools > Options > Appearance > Show Advanced Settings`. **Paste the content of `userstyle.css` in** the file opened by clicking on the button **"Custom stylesheet for rendered Markdown"**; **paste the content of `userchrome.css` in** the file opened by clicking on the button "Custom stylesheet for Joplin wide-app styles". Alternatively, you can also clone this repository and create symbolic links to `userchrome.css` and `userstyle.css` inside Joplin configuration folder (e.g. in `~/.config/joplin-desktop` on Linux). `userchrome.css` and `userstyle.css` files can be found in one of the folders of this repository, depending on the theme you would like to install.
+- Go to `Tools > Options > Appearance > Show Advanced Settings`. **Paste the content of `userstyle.css` in** the file opened by clicking on the button **"Custom stylesheet for rendered Markdown"**; **paste the content of `userchrome.css` in** the file opened by clicking on the button **"Custom stylesheet for Joplin wide-app styles"**. Alternatively, you can also clone this repository and create symbolic links to `userchrome.css` and `userstyle.css` inside Joplin configuration folder (e.g. in `~/.config/joplin-desktop` on Linux). `userchrome.css` and `userstyle.css` files can be found in one of the folders of this repository, depending on the theme you would like to install.
 
 ## Customization
 
