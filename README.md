@@ -1,10 +1,11 @@
 # VSCode [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Joplin
 
 ![screenshots](/screenshots/screenshots.gif)
+*See [Screenshots](#screenshots) section*
 
 These themes are **flat material themes** for newer version (>= 2.x) of Joplin  desktop application. They are **heavily inspired by the color schemes [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Visual Studio Code**. It's not 100% identical and there are rooms for improvement. Mostly background colors are changed. You can see [Screenshots](#screenshots) section to make your choice among the different themes.
 
-These themes are modified versions of [Joplin Light Theme](https://github.com/LongBay/Joplin-Light-Theme) by [LongBay](https://github.com/LongBay), which is itself originally inspired by [Joplin Clear UI theme](https://github.com/marcteys/joplin-theme-clearUI) by [Marc Teyssier](https://github.com/marcteys). Some tweaks are also coming from the topic (Share your CSS)[https://discourse.joplinapp.org/t/share-your-css/1730] on Joplin's forum.
+These themes are modified versions of [Joplin Light Theme](https://github.com/LongBay/Joplin-Light-Theme) by [LongBay](https://github.com/LongBay), which is itself originally inspired by [Joplin Clear UI theme](https://github.com/marcteys/joplin-theme-clearUI) by [Marc Teyssier](https://github.com/marcteys). Some tweaks are also coming from the topic [Share your CSS](https://discourse.joplinapp.org/t/share-your-css/1730) on Joplin's forum.
 
 ## Installation
 
@@ -15,18 +16,18 @@ Launch Joplin desktop application:
 ## Customization
 
 Notes: 
-- Please visit the topic (Share your CSS)[https://discourse.joplinapp.org/t/share-your-css/1730] on Joplin's forum. There are some tweaks you might be interested in.
-- For enhanced customization, you can also download and install the plugin (Joplin Rich Markdown)[https://github.com/CalebJohn/joplin-rich-markdown]. Then, enable "Add additional CSS classes for enhanced customization" in the plugin settings (`Tools > Options > Rich Markdown`).
+- Please visit the topic [Share your CSS](https://discourse.joplinapp.org/t/share-your-css/1730) on Joplin's forum. There are some tweaks you might be interested in.
+- For enhanced customization, you can also download and install the plugin [Joplin Rich Markdown](https://github.com/CalebJohn/joplin-rich-markdown). Then, enable "Add additional CSS classes for enhanced customization" in the plugin settings (`Tools > Options > Rich Markdown`).
 
 ### Changing Colors or Police Fonts
 
-You can easily change the colors or the police fonts by editing the `:root` pseudo-class in both files `userchrome.css` and `userstyle.css`. `:root` defines all color schemes variables used along the CSS files. 
+**You can easily change the colors or the police fonts by editing the `:root` pseudo-class** in both files `userchrome.css` and `userstyle.css`. `:root` defines all color schemes variables used along the CSS files. 
 
 The themes also use by default the following police fonts: `Fira Sans` and `Roboto Mono`. Be sure that these are installed on your computer or change them by modifying `--font-face` and `--font-mono` in `:root` pseudo-class. 
 
 ### Show/Hide Joplin's UI Elements
 
-Some buttons are shown or hidden by default. You can browse `userchrome.css` to identify these elements and to hide/show them, by adding `display: none !important;` or by removing it respectively. Here are some examples of such tweaks.
+Some buttons are shown or hidden by default. You can browse `userchrome.css` to identify these elements and to **hide/show them, by adding `display: none !important;` or by removing it respectively**. Here are some examples of such tweaks.
 
 #### Show "All notes" Icon (Sidebar)
 
