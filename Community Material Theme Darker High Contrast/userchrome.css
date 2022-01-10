@@ -17,7 +17,7 @@
   --violet: #BB80B3;
   --grey: #545454;
 
-  --darkest: #141414;
+  --darkest: #161616;
   --darker: #212121;
   --dark: #303030;
   --light: #EEFFFF;
@@ -128,7 +128,7 @@ i.icon-notes {
 
 .folders .list-item-container a:focus {
   color: var(--panel-foreground-active) !important;
-  background-color: var(--darkest) !important;
+  background-color: none !important;
 }
 
 .folders .list-item-container a:hover {

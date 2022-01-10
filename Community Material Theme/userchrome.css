@@ -17,7 +17,7 @@
   --violet: #BB80B3;
   --grey: #546E7A;
 
-  --darkest: #1C262B;
+  --darkest: #1e292e;
   --darker: #263238;
   --dark: #33434B;
   --light: #EEFFFF;
@@ -124,7 +124,7 @@ i.icon-notes {
 
 .folders .list-item-container a:focus {
   color: var(--panel-foreground-active) !important;
-  background-color: var(--darkest) !important;
+  background-color: none !important;
 }
 
 .folders .list-item-container a:hover {
@@ -230,7 +230,7 @@ div[height="50"] button span {
 }
 
 .note-list .list-item-container:hover {
-  background-color: var(--dark) !important;
+  background-color: var(--darkest) !important;
 }
 
 .item-list.note-list .list-item-container::before {
@@ -245,7 +245,7 @@ div[height="50"] button span {
 
 .note-list .list-item-container a:focus {
   color: var(--panel-foreground-active) !important;
-  background-color: var(--dark) !important;
+  background-color: var(--darkest) !important;
 }
 
 .note-list .list-item-container a:hover {

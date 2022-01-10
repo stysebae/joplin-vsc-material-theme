@@ -128,7 +128,7 @@ i.icon-notes {
 
 .folders .list-item-container a:focus {
   color: var(--panel-foreground-active) !important;
-  background-color: var(--darkest) !important;
+  background-color: none !important;
 }
 
 .folders .list-item-container a:hover {
