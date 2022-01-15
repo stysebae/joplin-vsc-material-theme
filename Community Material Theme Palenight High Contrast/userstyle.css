@@ -166,8 +166,9 @@ td {
   color: var(--dark) !important;
 }
 
-mark {
+mark, mark strong {
   background: var(--yellow) !important;
+  color: var(--dark) !important;
 }
 
 /* Highlighted searched item */
