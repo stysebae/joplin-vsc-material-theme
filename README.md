@@ -1,3 +1,5 @@
+# You are currently on branch `perso`, which contains my own customizations of Joplin's VSC Material Themes. Please go to [`master` branch](https://github.com/stysebae/joplin-vsc-material-theme).
+
 # VSCode [Community Material Themes](https://github.com/material-theme/vsc-material-theme) for Joplin
 
 ![screenshots](/screenshots/screenshots.gif)

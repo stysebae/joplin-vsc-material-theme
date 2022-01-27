@@ -164,6 +164,7 @@ i.icon-notes {
 /* SYNCHRONIZATION AREA */
 
 .sidebar > div:last-of-type {
+  display: none; /* Hide the synchronization area */
   background-color: none !important;
 }
 
@@ -225,6 +226,10 @@ div[height="50"] button:hover {
 
 div[height="50"] button span {
   color: var(--accent-color) !important;
+}
+
+div[height="50"] .new-todo-button {
+  display: none; /* Hide the button "New todo" */
 }
 
 /* LIST OF NOTES */
