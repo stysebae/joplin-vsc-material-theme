@@ -397,16 +397,20 @@ pre.CodeMirror-line span.cm-comment {
   border: 0 !important;
 }
 
-div.CodeMirror span.cm-comment.cm-jn-inline-code {
-	background-color: transparent !important;
-	padding-right: 0 !important;
-  padding-left: 0 !important;
+/* Code Block */
+.CodeMirror .cm-jn-code-block-background {
+  background-color: var(--darkest) !important;
 }
 
 /* Code Block Text */
 div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
   color: var(--white) !important;
   background-color: transparent !important;
+  padding: 10px !important;
+}
+
+div.CodeMirror span.cm-comment.cm-jn-inline-code {
+	background-color: transparent !important;
 }
 
 /* Horizontal Line */
