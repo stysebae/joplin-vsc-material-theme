@@ -81,7 +81,6 @@ html, body {
 
 /* General panel style */
 .resizableLayoutItem > div {
-  min-width: 200px !important;
   background-color: var(--darker) !important;
 }
 
